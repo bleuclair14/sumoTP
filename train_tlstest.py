@@ -17,12 +17,12 @@ if num_args>=2:
     NET = sys.argv[1]
 else:
     NET = "small"
-NR_STEPS = 50000
+NR_STEPS = 100000
 
 env = TLSEnv(NET, cmd=True)
 
 save_path = join("Training", "Models", f"PPO_{NR_STEPS}_2j")
-# log_path = join("Training", "Logs")
+log_path = join("Training", "Logs")
 
 
 model = PPO('MultiInputPolicy', env, verbose=1)

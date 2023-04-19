@@ -152,7 +152,7 @@ class TLSEnv(gym.Env):
         self._apply_actions(action)
         self._run_steps()
             
-        done = bool(self.stepcnt >= 10001)
+        done = bool(self.stepcnt >= 10000)
         if done:
             print("Episode completed.")
             # traci.close(False)
