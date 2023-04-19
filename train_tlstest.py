@@ -19,7 +19,7 @@ else:
     NET = "small"
 NR_STEPS = 50000
 
-env = TLSEnv(NET, cmd=False)
+env = TLSEnv(NET, cmd=True)
 
 save_path = join("Training", "Models", f"PPO_{NR_STEPS}_2j")
 # log_path = join("Training", "Logs")
