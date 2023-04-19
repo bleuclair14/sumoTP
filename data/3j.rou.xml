@@ -19,15 +19,15 @@
     <route id="r_9" edges="-161847018#2 548514765 228126460#0 23055276#1"/>
     <!-- Vehicles, persons and containers (sorted by depart) -->
     <vehicle id="v_0" depart="0.00" route="r_2"/>
-    <flow id="f_0" begin="0.00" route="r_10" end="3600.00" vehsPerHour="300.00"/>
-    <flow id="f_1" begin="0.00" route="r_8" end="3600.00" vehsPerHour="300.00"/>
-    <flow id="f_10" begin="0.00" route="r_0" end="3600.00" vehsPerHour="300.00"/>
-    <flow id="f_11" begin="0.00" route="r_11" end="3600.00" vehsPerHour="1800.00"/>
-    <flow id="f_2" begin="0.00" route="r_3" end="3600.00" vehsPerHour="1800.00"/>
-    <flow id="f_3" begin="0.00" route="r_7" end="3600.00" vehsPerHour="300.00"/>
-    <flow id="f_5" begin="0.00" route="r_1" end="3600.00" vehsPerHour="300.00"/>
-    <flow id="f_6" begin="0.00" route="r_4" end="3600.00" vehsPerHour="300.00"/>
-    <flow id="f_7" begin="0.00" route="r_9" end="3600.00" vehsPerHour="300.00"/>
-    <flow id="f_8" begin="0.00" route="r_6" end="3600.00" vehsPerHour="300.00"/>
-    <flow id="f_9" begin="0.00" route="r_5" end="3600.00" vehsPerHour="300.00"/>
+    <flow id="f_0" begin="0.00" route="r_10" end="10000.00" vehsPerHour="300.00"/>
+    <flow id="f_1" begin="0.00" route="r_8" end="10000.00" vehsPerHour="300.00"/>
+    <flow id="f_10" begin="0.00" route="r_0" end="10000.00" vehsPerHour="300.00"/>
+    <flow id="f_11" begin="0.00" route="r_11" end="10000.00" vehsPerHour="1800.00"/>
+    <flow id="f_2" begin="0.00" route="r_3" end="10000.00" vehsPerHour="1800.00"/>
+    <flow id="f_3" begin="0.00" route="r_7" end="10000.00" vehsPerHour="300.00"/>
+    <flow id="f_5" begin="0.00" route="r_1" end="10000.00" vehsPerHour="300.00"/>
+    <flow id="f_6" begin="0.00" route="r_4" end="10000.00" vehsPerHour="300.00"/>
+    <flow id="f_7" begin="0.00" route="r_9" end="10000.00" vehsPerHour="300.00"/>
+    <flow id="f_8" begin="0.00" route="r_6" end="10000.00" vehsPerHour="300.00"/>
+    <flow id="f_9" begin="0.00" route="r_5" end="10000.00" vehsPerHour="300.00"/>
 </routes>
