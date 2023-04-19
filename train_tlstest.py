@@ -17,7 +17,7 @@ if num_args>=2:
     NET = sys.argv[1]
 else:
     NET = "small"
-NR_STEPS = 100000
+NR_STEPS = 1000000
 
 env = TLSEnv(NET, cmd=True)
 
