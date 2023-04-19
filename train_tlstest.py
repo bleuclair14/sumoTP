@@ -24,7 +24,6 @@ env = TLSEnv(NET, cmd=True)
 save_path = join("Training", "Models", f"PPO_{NR_STEPS}_2j")
 # log_path = join("Training", "Logs")
 
-print(env.observation)
 
 model = PPO('MultiInputPolicy', env, verbose=1)
 model.learn(NR_STEPS)

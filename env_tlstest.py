@@ -144,13 +144,11 @@ class TLSEnv(gym.Env):
         """
         return traci.simulation.getTime()   
     def step(self, action):
-        print("stepping...")
         # if action is None or action.any() is None:
         #     for _ in range(self.delta_time):
         #         traci.simulationStep()
                 
         # else:
-        print(action)
         self._apply_actions(action)
         self._run_steps()
             
@@ -181,7 +179,6 @@ class TLSEnv(gym.Env):
             i += 1
             if self.traffic_signals[ts_id].time_to_act:
                 self.traffic_signals[ts_id].set_next_phase(action)
-        print("apply_actions")
     def _run_steps(self):
         time_to_act = False
         while not time_to_act:

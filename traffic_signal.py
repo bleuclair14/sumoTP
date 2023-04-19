@@ -134,7 +134,6 @@ class TrafficSignal:
             #self.sumo.trafficlight.setPhase(self.id, self.green_phase)
             self.sumo.trafficlight.setRedYellowGreenState(self.id, self.all_phases[self.green_phase].state)
             self.is_yellow = False
-            print("updated")
 
     def set_next_phase(self, new_phase):
         """
