@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023-04-19 23:58:46 by Eclipse SUMO netedit Version 1.16.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="D:\AppData\TeamProject\reinforcement_learning\rw_obs\data\2j.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="D:\AppData\TeamProject\reinforcement_learning\rw_obs\data\2j.net.xml"/>
+        <output.street-names value="true"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="0"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="false"/>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.50"/>
+        <rectangular-lane-cut value="0"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="1"/>
+    </pedestrian>
+
+</configuration>
+-->
+
+<net version="1.16" junctionCornerDetail="5" walkingareas="true" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="-446830.08,-5426312.92" convBoundary="14582.52,54752.90,14782.68,54996.80" origBoundary="8.273244,48.987430,8.656789,49.781239" projParameter="+proj=utm +zone=32 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"/>
+
+    <type id="cycleway.lane" allow="bicycle" bikeLaneWidth="1.00"/>
+    <type id="cycleway.lane|cycleway.track|highway.tertiary" priority="10" numLanes="1" speed="13.89" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" oneway="0" sidewalkWidth="3.00" bikeLaneWidth="1.50"/>
+    <type id="cycleway.lane|highway.primary" priority="12" numLanes="2" speed="13.89" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" oneway="0" sidewalkWidth="3.00" bikeLaneWidth="1.00"/>
+    <type id="cycleway.lane|highway.primary_link" priority="7" numLanes="1" speed="13.89" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" oneway="0" sidewalkWidth="3.00" bikeLaneWidth="1.00"/>
+    <type id="cycleway.lane|highway.residential" priority="3" numLanes="1" speed="13.89" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" oneway="0" sidewalkWidth="2.00" bikeLaneWidth="1.00"/>
+    <type id="cycleway.lane|highway.secondary" priority="11" numLanes="1" speed="13.89" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" oneway="0" sidewalkWidth="3.00" bikeLaneWidth="1.00"/>
+    <type id="cycleway.lane|highway.tertiary" priority="10" numLanes="1" speed="13.89" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" oneway="0" sidewalkWidth="3.00" bikeLaneWidth="1.00"/>
+    <type id="cycleway.lane|highway.unclassified" priority="4" numLanes="1" speed="13.89" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" oneway="0" sidewalkWidth="2.00" bikeLaneWidth="1.00"/>
+    <type id="cycleway.opposite_lane" allow="bicycle" bikeLaneWidth="1.00"/>
+    <type id="cycleway.opposite_lane|highway.residential" priority="3" numLanes="1" speed="13.89" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" oneway="0" sidewalkWidth="2.00" bikeLaneWidth="1.00"/>
+    <type id="cycleway.opposite_track" allow="bicycle" bikeLaneWidth="1.50"/>
+    <type id="cycleway.opposite_track|highway.residential" priority="3" numLanes="1" speed="13.89" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" oneway="0" sidewalkWidth="2.00" bikeLaneWidth="1.50"/>
+    <type id="cycleway.track" allow="bicycle" bikeLaneWidth="1.50"/>
+    <type id="cycleway.track|highway.footway" priority="1" numLanes="1" speed="13.89" allow="pedestrian bicycle" oneway="1" width="3.20" bikeLaneWidth="1.50"/>
+    <type id="cycleway.track|highway.living_street" priority="2" numLanes="1" speed="13.89" disallow="tram rail_urban rail rail_electric rail_fast ship" oneway="0" bikeLaneWidth="1.50"/>
+    <type id="cycleway.track|highway.primary" priority="12" numLanes="2" speed="13.89" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" oneway="0" sidewalkWidth="3.00" bikeLaneWidth="1.50"/>
+    <type id="cycleway.track|highway.residential" priority="3" numLanes="1" speed="13.89" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" oneway="0" sidewalkWidth="2.00" bikeLaneWidth="1.50"/>
+    <type id="cycleway.track|highway.secondary" priority="11" numLanes="1" speed="13.89" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" oneway="0" sidewalkWidth="3.00" bikeLaneWidth="1.50"/>
+    <type id="cycleway.track|highway.tertiary" priority="10" numLanes="1" speed="13.89" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" oneway="0" sidewalkWidth="3.00" bikeLaneWidth="1.50"/>
+    <type id="cycleway.track|highway.unclassified" priority="4" numLanes="1" speed="13.89" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" oneway="0" sidewalkWidth="2.00" bikeLaneWidth="1.50"/>
+    <type id="highway.bridleway" priority="1" numLanes="1" speed="2.78" allow="pedestrian" oneway="1" width="2.00"/>
+    <type id="highway.bus_guideway" priority="1" numLanes="1" speed="13.89" allow="bus" oneway="1"/>
+    <type id="highway.cycleway" priority="1" numLanes="1" speed="5.56" allow="bicycle" oneway="0" width="1.00"/>
+    <type id="highway.footway" priority="1" numLanes="1" speed="2.78" allow="pedestrian" oneway="1" width="2.00"/>
+    <type id="highway.ford" priority="1" numLanes="1" speed="2.78" allow="army" oneway="0"/>
+    <type id="highway.living_street" priority="2" numLanes="1" speed="2.78" disallow="tram rail_urban rail rail_electric rail_fast ship" oneway="0"/>
+    <type id="highway.motorway" priority="14" numLanes="2" speed="27.78" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" oneway="1"/>
+    <type id="highway.motorway_link" priority="9" numLanes="1" speed="16.67" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" oneway="1"/>
+    <type id="highway.path" priority="1" numLanes="1" speed="5.56" allow="pedestrian bicycle" oneway="0" width="2.00"/>
+    <type id="highway.pedestrian" priority="1" numLanes="1" speed="2.78" allow="pedestrian" oneway="1" width="2.00"/>
+    <type id="highway.primary" priority="12" numLanes="2" speed="13.89" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" oneway="0" sidewalkWidth="3.00"/>
+    <type id="highway.primary_link" priority="7" numLanes="1" speed="13.89" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" oneway="0" sidewalkWidth="3.00"/>
+    <type id="highway.raceway" priority="15" numLanes="2" speed="83.33" allow="vip" oneway="0"/>
+    <type id="highway.residential" priority="3" numLanes="1" speed="13.89" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" oneway="0" sidewalkWidth="2.00"/>
+    <type id="highway.secondary" priority="11" numLanes="1" speed="13.89" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" oneway="0" sidewalkWidth="3.00"/>
+    <type id="highway.secondary_link" priority="6" numLanes="1" speed="13.89" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" oneway="0" sidewalkWidth="3.00"/>
+    <type id="highway.service" priority="1" numLanes="1" speed="5.56" allow="pedestrian delivery bicycle" oneway="0"/>
+    <type id="highway.service|railway.rail" priority="20" numLanes="1" speed="44.44" allow="pedestrian delivery bicycle rail" oneway="0"/>
+    <type id="highway.stairs" priority="1" numLanes="1" speed="1.39" allow="pedestrian" oneway="1" width="2.00"/>
+    <type id="highway.step" priority="1" numLanes="1" speed="1.39" allow="pedestrian" oneway="1" width="2.00"/>
+    <type id="highway.steps" priority="1" numLanes="1" speed="1.39" allow="pedestrian" oneway="1" width="2.00"/>
+    <type id="highway.tertiary" priority="10" numLanes="1" speed="13.89" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" oneway="0" sidewalkWidth="3.00"/>
+    <type id="highway.tertiary_link" priority="5" numLanes="1" speed="13.89" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" oneway="0" sidewalkWidth="2.00"/>
+    <type id="highway.track" priority="1" numLanes="1" speed="5.56" allow="pedestrian motorcycle moped bicycle" oneway="0"/>
+    <type id="highway.trunk" priority="13" numLanes="2" speed="13.89" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" oneway="0"/>
+    <type id="highway.trunk_link" priority="8" numLanes="1" speed="13.89" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" oneway="0"/>
+    <type id="highway.unclassified" priority="4" numLanes="1" speed="13.89" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" oneway="0" sidewalkWidth="2.00"/>
+    <type id="highway.unclassified|railway.rail" priority="20" numLanes="1" speed="44.44" disallow="pedestrian tram rail_urban rail_electric rail_fast ship" oneway="0" sidewalkWidth="2.00"/>
+    <type id="highway.unsurfaced" priority="1" numLanes="1" speed="8.33" disallow="tram rail_urban rail rail_electric rail_fast ship" oneway="0"/>
+    <type id="railway.highspeed" priority="21" numLanes="1" speed="69.44" allow="rail_fast" oneway="1"/>
+    <type id="railway.light_rail" priority="19" numLanes="1" speed="27.78" allow="rail_urban" oneway="1"/>
+    <type id="railway.preserved" priority="16" numLanes="1" speed="27.78" allow="rail" oneway="1"/>
+    <type id="railway.rail" priority="20" numLanes="1" speed="44.44" allow="rail" oneway="1"/>
+    <type id="railway.subway" priority="18" numLanes="1" speed="27.78" allow="rail_urban" oneway="1"/>
+    <type id="railway.tram" priority="17" numLanes="1" speed="13.89" allow="tram" oneway="1"/>
+    <type id="route.ferry" priority="2" numLanes="1" speed="10.00" allow="ship" oneway="0" width="5.00"/>
+    <type id="waterway.canal" priority="1" numLanes="1" speed="10.00" allow="ship" oneway="0" width="5.00"/>
+    <type id="waterway.river" priority="1" numLanes="1" speed="10.00" allow="ship" oneway="0" width="7.00"/>
+
+    <edge id=":248782310_0" function="internal">
+        <lane id=":248782310_0_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="3.65" length="4.67" shape="14776.12,54957.31 14776.06,54958.75 14775.58,54959.51 14774.69,54959.58 14773.38,54958.97"/>
+    </edge>
+    <edge id=":248782310_c0" function="crossing" crossingEdges="-161847018#2 161847018#1">
+        <lane id=":248782310_c0_0" index="0" allow="pedestrian" speed="2.78" length="6.40" width="4.00" shape="14773.06,54961.51 14778.52,54958.18"/>
+    </edge>
+    <edge id=":248782310_w0" function="walkingarea">
+        <lane id=":248782310_w0_0" index="0" allow="pedestrian" speed="2.78" length="2.24" width="4.00" shape="14774.10,54963.22 14772.02,54959.80 14770.31,54960.84"/>
+    </edge>
+    <edge id=":248782310_w1" function="walkingarea">
+        <lane id=":248782310_w1_0" index="0" allow="pedestrian" speed="2.78" length="2.24" width="4.00" shape="14779.19,54955.44 14777.48,54956.48 14779.56,54959.89"/>
+    </edge>
+    <edge id=":2756692672_0" function="internal">
+        <lane id=":2756692672_0_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="8.33" length="0.10" shape="14699.87,54838.15 14699.87,54838.15"/>
+    </edge>
+    <edge id=":2756692672_1" function="internal">
+        <lane id=":2756692672_1_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="8.33" length="0.10" shape="14702.61,54836.49 14702.61,54836.49"/>
+    </edge>
+    <edge id=":2756692672_w0" function="walkingarea">
+        <lane id=":2756692672_w0_0" index="0" allow="pedestrian" speed="2.78" length="0.10" width="2.00" shape="14698.51,54838.99 14696.80,54840.03 14698.51,54838.98"/>
+    </edge>
+    <edge id=":2756692672_w1" function="walkingarea">
+        <lane id=":2756692672_w1_0" index="0" allow="pedestrian" speed="2.78" length="0.10" width="2.00" shape="14703.97,54835.66 14705.68,54834.61 14703.97,54835.65"/>
+    </edge>
+    <edge id=":5299018918_0" function="internal">
+        <lane id=":5299018918_0_0" index="0" allow="bicycle" speed="13.89" length="8.21" width="1.50" shape="14689.13,54893.82 14687.21,54895.28 14686.13,54896.58 14685.05,54897.89 14683.14,54899.35"/>
+        <lane id=":5299018918_0_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="8.21" shape="14687.91,54891.81 14685.99,54893.27 14684.91,54894.58 14683.83,54895.88 14681.91,54897.34"/>
+        <lane id=":5299018918_0_2" index="2" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="8.21" shape="14686.24,54889.08 14684.32,54890.54 14683.24,54891.85 14682.16,54893.15 14680.24,54894.61"/>
+        <lane id=":5299018918_0_3" index="3" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="8.21" shape="14686.24,54889.08 14684.06,54890.12 14682.41,54890.48 14680.75,54890.85 14678.58,54891.88"/>
+    </edge>
+    <edge id=":5299018918_w0" function="walkingarea">
+        <lane id=":5299018918_w0_0" index="0" allow="pedestrian" speed="2.78" length="8.16" width="3.00" shape="14683.53,54899.99 14685.09,54902.55 14691.08,54897.02 14689.52,54894.46 14688.11,54895.46 14687.19,54896.36 14686.52,54897.22 14685.85,54898.08 14684.94,54898.99"/>
+    </edge>
+    <edge id=":6837583242_0" function="internal">
+        <lane id=":6837583242_0_0" index="0" allow="delivery bicycle" speed="5.73" length="6.73" shape="14631.69,54864.43 14630.72,54863.44 14629.39,54863.11 14627.71,54863.44 14625.67,54864.41"/>
+    </edge>
+    <edge id=":6837583242_1" function="internal">
+        <lane id=":6837583242_1_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="8.33" length="9.40" shape="14631.69,54864.43 14626.84,54856.37"/>
+    </edge>
+    <edge id=":6837583242_2" function="internal">
+        <lane id=":6837583242_2_0" index="0" allow="delivery bicycle" speed="5.69" length="6.71" shape="14624.05,54861.65 14625.87,54860.35 14626.95,54859.04 14627.27,54857.71 14626.84,54856.37"/>
+    </edge>
+    <edge id=":6837583242_3" function="internal">
+        <lane id=":6837583242_3_0" index="0" allow="pedestrian delivery bicycle" speed="3.65" length="4.67" shape="14624.05,54861.65 14625.49,54861.74 14626.24,54862.22 14626.30,54863.12 14625.67,54864.41"/>
+    </edge>
+    <edge id=":6837583242_w0" function="walkingarea">
+        <lane id=":6837583242_w0_0" index="0" allow="pedestrian" speed="2.78" length="5.70" width="3.20" shape="14625.47,54857.20 14623.76,54858.23 14623.24,54860.27 14624.86,54863.03 14626.48,54865.79 14628.60,54866.28 14630.32,54865.25"/>
+    </edge>
+    <edge id=":6837583246_0" function="internal">
+        <lane id=":6837583246_0_0" index="0" allow="pedestrian delivery bicycle" speed="3.65" length="4.67" shape="14607.70,54878.82 14607.61,54880.26 14607.12,54881.00 14606.23,54881.06 14604.94,54880.42"/>
+    </edge>
+    <edge id=":9916479123_w0" function="walkingarea">
+        <lane id=":9916479123_w0_0" index="0" allow="pedestrian" speed="2.78" length="2.02" width="2.00" shape="14717.52,54847.50 14719.22,54846.44 14718.54,54845.88 14718.09,54845.81 14717.57,54845.89 14716.97,54846.11 14716.30,54846.47 14717.34,54848.18 14719.90,54846.61 14718.86,54844.90 14717.76,54845.78 14717.45,54846.21 14717.31,54846.64 14717.34,54847.07"/>
+    </edge>
+    <edge id=":9916479124_w0" function="walkingarea">
+        <lane id=":9916479124_w0_0" index="0" allow="pedestrian" speed="2.78" length="1.45" width="2.00" shape="14734.82,54871.25 14733.76,54869.55 14731.20,54871.13 14732.25,54872.84 14733.34,54871.97 14733.65,54871.54 14733.80,54871.11 14733.78,54870.68 14733.61,54870.25 14731.88,54871.25 14732.56,54871.85 14733.01,54871.92 14733.53,54871.85 14734.14,54871.62"/>
+    </edge>
+    <edge id=":J47_0" function="internal">
+        <lane id=":J47_0_0" index="0" allow="bicycle" speed="13.89" length="8.22" width="1.50" shape="14671.55,54876.01 14678.54,54872.06"/>
+        <lane id=":J47_0_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="8.22" shape="14672.80,54878.01 14679.76,54874.07"/>
+        <lane id=":J47_0_2" index="2" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="8.22" shape="14674.49,54880.72 14681.41,54876.80"/>
+        <lane id=":J47_0_3" index="3" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="8.22" shape="14674.49,54880.72 14676.86,54879.89 14678.77,54880.11 14680.68,54880.35 14683.07,54879.54"/>
+    </edge>
+    <edge id=":J47_w0" function="walkingarea">
+        <lane id=":J47_w0_0" index="0" allow="pedestrian" speed="2.78" length="8.06" width="3.00" shape="14678.15,54871.41 14676.60,54868.85 14669.57,54872.83 14671.16,54875.38"/>
+    </edge>
+    <edge id=":cluster_1345594333_248782320_0" function="internal">
+        <lane id=":cluster_1345594333_248782320_0_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="3.65" length="4.67" shape="14712.22,54995.97 14712.16,54997.41 14711.68,54998.17 14710.79,54998.24 14709.49,54997.64"/>
+    </edge>
+    <edge id=":cluster_1345594333_248782320_c0" function="crossing" crossingEdges="-23055276#1 23055276#1">
+        <lane id=":cluster_1345594333_248782320_c0_0" index="0" allow="pedestrian" speed="2.78" length="6.40" width="4.00" shape="14709.16,55000.18 14714.63,54996.84"/>
+    </edge>
+    <edge id=":cluster_1345594333_248782320_w0" function="walkingarea">
+        <lane id=":cluster_1345594333_248782320_w0_0" index="0" allow="pedestrian" speed="2.78" length="2.24" width="4.00" shape="14710.20,55001.88 14708.12,54998.47 14706.41,54999.51"/>
+    </edge>
+    <edge id=":cluster_1345594333_248782320_w1" function="walkingarea">
+        <lane id=":cluster_1345594333_248782320_w1_0" index="0" allow="pedestrian" speed="2.78" length="2.24" width="4.00" shape="14715.29,54994.09 14713.58,54995.14 14715.67,54998.55"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_0" function="internal">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_0_0" index="0" allow="bicycle" speed="6.28" length="8.35" width="1.50" shape="14724.06,54879.58 14722.46,54877.46 14720.80,54876.26 14719.07,54875.99 14717.29,54876.64"/>
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_0_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="7.11" length="11.01" shape="14724.79,54879.14 14722.61,54876.17 14720.43,54874.43 14718.24,54873.91 14716.06,54874.63"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_2" function="internal">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_2_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="8.33" length="35.26" shape="14724.79,54879.14 14706.48,54849.00"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_3" function="internal">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_3_0" index="0" allow="bicycle" speed="7.41" length="8.26" width="1.50" shape="14733.33,54866.91 14729.89,54869.34 14727.90,54871.84 14727.72,54872.67"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_4" function="internal">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_4_0" index="0" allow="bicycle" speed="13.89" length="18.76" width="1.50" shape="14733.33,54866.91 14717.29,54876.64"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_5" function="internal">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_5_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="8.22" length="7.78" shape="14732.11,54864.90 14728.42,54867.64 14726.67,54870.30"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_6" function="internal">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_6_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="18.77" shape="14732.11,54864.90 14716.06,54874.63"/>
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_6_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="18.77" shape="14730.45,54862.16 14714.40,54871.90"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_19" function="internal">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_19_0" index="0" allow="bicycle" speed="7.41" length="4.55" width="1.50" shape="14727.72,54872.67 14727.35,54874.40 14728.25,54877.03"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_20" function="internal">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_20_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="8.22" length="7.53" shape="14726.67,54870.30 14726.43,54870.66 14726.13,54873.93 14727.52,54877.48"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_8" function="internal">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_8_0" index="0" allow="bicycle" speed="7.47" length="8.21" width="1.50" shape="14709.94,54846.90 14711.65,54848.56 14714.05,54849.03 14717.14,54848.32 14717.33,54848.22"/>
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_8_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="8.13" length="10.65" shape="14709.21,54847.34 14711.50,54849.85 14714.42,54850.87 14717.96,54850.39 14718.49,54850.14"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_10" function="internal">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_10_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="8.33" length="35.26" shape="14709.21,54847.34 14727.52,54877.48"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_21" function="internal">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_21_0" index="0" allow="bicycle" speed="7.47" length="4.01" width="1.50" shape="14717.33,54848.22 14720.91,54846.41"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_22" function="internal">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_22_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="8.13" length="4.02" shape="14718.49,54850.14 14722.13,54848.42"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_11" function="internal">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_11_0" index="0" allow="bicycle" speed="5.87" length="3.47" width="1.50" shape="14704.80,54856.16 14706.24,54854.91 14706.84,54853.47"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_12" function="internal">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_12_0" index="0" allow="bicycle" speed="13.89" length="18.83" width="1.50" shape="14704.80,54856.16 14720.91,54846.41"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_13" function="internal">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_13_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="6.92" length="4.45" shape="14706.02,54858.17 14707.70,54856.60 14708.34,54854.55"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_14" function="internal">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_14_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="19.06" shape="14706.02,54858.17 14722.13,54848.42"/>
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_14_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="19.06" shape="14706.02,54858.17 14711.10,54855.68 14714.90,54854.67 14718.71,54853.65 14723.79,54851.16"/>
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_14_2" index="2" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="19.06" shape="14707.69,54860.90 14712.76,54858.42 14716.57,54857.40 14720.37,54856.38 14725.44,54853.90"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_17" function="internal">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_17_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="10.43" length="10.35" shape="14709.36,54863.63 14713.16,54862.88 14717.46,54864.94 14718.66,54866.16"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_18" function="internal">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_18_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="5.61" length="10.75" shape="14709.36,54863.63 14713.72,54863.81 14716.01,54865.24 14716.24,54867.94 14715.83,54868.83"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_23" function="internal">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_23_0" index="0" allow="bicycle" speed="5.87" length="4.25" width="1.50" shape="14706.84,54853.47 14706.88,54853.37 14706.71,54851.55 14705.75,54849.45"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_24" function="internal">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_24_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="6.92" length="5.91" shape="14708.34,54854.55 14707.93,54852.02 14706.48,54849.00"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_25" function="internal">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_25_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="10.43" length="14.42" shape="14718.66,54866.16 14722.24,54869.80 14727.52,54877.48"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_26" function="internal">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_26_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="5.61" length="3.39" shape="14715.83,54868.83 14714.40,54871.90"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c0" function="crossing" crossingEdges="251158322#1">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c0_0" index="0" allow="pedestrian" speed="2.78" length="7.90" width="4.00" shape="14727.92,54861.77 14731.97,54868.56"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c1" function="crossing" crossingEdges="249375697#1">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c1_0" index="0" allow="pedestrian" speed="2.78" length="11.10" width="4.00" shape="14718.81,54846.81 14724.56,54856.30"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c2" function="crossing" crossingEdges="23055404#1 -23055404#2">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c2_0" index="0" allow="pedestrian" speed="2.78" length="6.40" width="4.00" shape="14706.15,54851.54 14711.62,54848.22"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c3" function="crossing" crossingEdges="161847018#1 -161847018#2">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c3_0" index="0" allow="pedestrian" speed="2.78" length="6.40" width="4.00" shape="14727.85,54874.94 14722.38,54878.26"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w0" function="walkingarea">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w0_0" index="0" allow="pedestrian" speed="2.78" length="4.98" width="4.00" shape="14728.89,54876.64 14730.60,54875.60 14733.03,54872.36 14731.98,54870.65 14732.39,54872.12 14734.12,54871.12 14735.24,54870.13 14733.74,54867.53 14731.44,54869.04 14729.77,54870.53 14728.67,54872.04 14728.16,54873.56 14728.23,54875.09"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w1" function="walkingarea">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w1_0" index="0" allow="pedestrian" speed="2.78" length="2.44" width="4.00" shape="14717.10,54847.84 14720.52,54845.77 14718.97,54843.21 14718.10,54844.66 14716.41,54845.73"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w2" function="walkingarea">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w2_0" index="0" allow="pedestrian" speed="2.78" length="4.86" width="4.00" shape="14718.11,54847.70 14717.07,54846.00 14712.29,54845.47 14710.58,54846.51 14712.65,54849.93"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w3" function="walkingarea">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w3_0" index="0" allow="pedestrian" speed="2.78" length="3.29" width="4.00" shape="14705.11,54849.84 14703.40,54850.87 14702.85,54852.96 14704.40,54855.53 14705.27,54854.85 14705.84,54854.07 14706.10,54853.18 14706.07,54852.18 14705.74,54851.06"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w4" function="walkingarea">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w4_0" index="0" allow="pedestrian" speed="2.78" length="3.57" width="4.00" shape="14717.68,54877.28 14719.24,54879.84 14721.71,54881.01 14723.42,54879.97 14722.50,54878.64 14721.56,54877.66 14720.61,54877.04 14719.65,54876.76 14718.67,54876.84"/>
+    </edge>
+    <edge id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w5" function="walkingarea">
+        <lane id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w5_0" index="0" allow="pedestrian" speed="2.78" length="6.42" width="4.00" shape="14722.85,54857.34 14726.27,54855.27 14729.63,54860.75 14726.20,54862.80"/>
+    </edge>
+    <edge id=":cluster_248783357_6837763859_0" function="internal">
+        <lane id=":cluster_248783357_6837763859_0_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="3.65" length="4.67" shape="14648.43,54753.73 14648.49,54752.29 14648.96,54751.53 14649.85,54751.46 14651.16,54752.06"/>
+    </edge>
+    <edge id=":cluster_248783357_6837763859_c0" function="crossing" crossingEdges="-270655649#0 270655649#0">
+        <lane id=":cluster_248783357_6837763859_c0_0" index="0" allow="pedestrian" speed="2.78" length="6.40" width="4.00" shape="14651.49,54749.52 14646.02,54752.85"/>
+    </edge>
+    <edge id=":cluster_248783357_6837763859_w0" function="walkingarea">
+        <lane id=":cluster_248783357_6837763859_w0_0" index="0" allow="pedestrian" speed="2.78" length="2.24" width="4.00" shape="14650.45,54747.82 14652.53,54751.23 14654.23,54750.19"/>
+    </edge>
+    <edge id=":cluster_248783357_6837763859_w1" function="walkingarea">
+        <lane id=":cluster_248783357_6837763859_w1_0" index="0" allow="pedestrian" speed="2.78" length="2.24" width="4.00" shape="14645.35,54755.60 14647.06,54754.56 14644.98,54751.15"/>
+    </edge>
+    <edge id=":cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260_c0" function="crossing" crossingEdges="251158322#1">
+        <lane id=":cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260_c0_0" index="0" allow="pedestrian" speed="2.78" length="7.90" width="4.00" shape="14795.05,54827.76 14790.83,54821.09"/>
+    </edge>
+    <edge id=":cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260_c1" function="crossing" crossingEdges="249375697#1">
+        <lane id=":cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260_c1_0" index="0" allow="pedestrian" speed="2.78" length="11.10" width="4.00" shape="14788.69,54818.34 14783.19,54808.70"/>
+    </edge>
+    <edge id=":cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260_w0" function="walkingarea">
+        <lane id=":cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260_w0_0" index="0" allow="pedestrian" speed="2.78" length="16.24" width="4.00" shape="14796.74,54826.69 14793.34,54828.89 14794.98,54831.40 14794.90,54831.34 14795.96,54833.03 14780.03,54807.46 14781.07,54809.17 14779.89,54807.13 14781.36,54809.74 14781.46,54809.69 14784.93,54807.71"/>
+    </edge>
+    <edge id=":cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260_w1" function="walkingarea">
+        <lane id=":cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260_w1_0" index="0" allow="pedestrian" speed="2.78" length="3.48" width="4.00" shape="14792.52,54820.02 14789.14,54822.15 14786.96,54819.33 14790.43,54817.35"/>
+    </edge>
+    <edge id=":cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261_c0" function="crossing" crossingEdges="316778911#1">
+        <lane id=":cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261_c0_0" index="0" allow="pedestrian" speed="2.78" length="9.60" width="4.00" shape="14582.48,54948.97 14587.48,54957.17"/>
+    </edge>
+    <edge id=":cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261_c1" function="crossing" crossingEdges="228126461#1">
+        <lane id=":cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261_c1_0" index="0" allow="pedestrian" speed="2.78" length="7.90" width="4.00" shape="14574.58,54935.97 14578.68,54942.72"/>
+    </edge>
+    <edge id=":cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261_w0" function="walkingarea">
+        <lane id=":cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261_w0_0" index="0" allow="pedestrian" speed="2.78" length="17.09" width="4.00" shape="14572.87,54937.00 14576.28,54934.93 14574.73,54932.37 14591.02,54959.14 14589.97,54957.43 14590.74,54958.69 14589.18,54956.13 14585.77,54958.21"/>
+    </edge>
+    <edge id=":cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261_w1" function="walkingarea">
+        <lane id=":cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261_w1_0" index="0" allow="pedestrian" speed="2.78" length="7.32" width="4.00" shape="14576.97,54943.76 14580.39,54941.68 14584.19,54947.93 14580.78,54950.01"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_0" function="internal">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_0_0" index="0" allow="bicycle" speed="7.05" length="6.47" shape="14661.43,54918.72 14659.44,54916.18 14657.28,54914.81 14656.59,54914.76"/>
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_0_1" index="1" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="7.83" length="8.92" shape="14661.43,54918.72 14658.72,54914.98 14656.04,54912.76 14655.24,54912.55"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_2" function="internal">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_2_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="8.33" length="36.29" shape="14661.43,54918.72 14644.91,54886.41"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_15" function="internal">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_15_0" index="0" allow="bicycle" speed="7.05" length="4.35" shape="14656.59,54914.76 14654.95,54914.63 14652.44,54915.63"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_16" function="internal">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_16_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="7.83" length="4.67" shape="14655.24,54912.55 14653.39,54912.07 14650.77,54912.90"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_3" function="internal">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_3_0" index="0" allow="bicycle" speed="7.00" length="6.34" width="1.50" shape="14669.37,54907.75 14666.39,54909.95 14664.77,54912.03"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_4" function="internal">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_4_0" index="0" allow="bicycle" speed="13.89" length="18.71" width="1.50" shape="14669.37,54907.75 14664.48,54910.35 14660.90,54911.69 14657.32,54913.03 14652.44,54915.63"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_5" function="internal">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_5_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="7.86" length="0.17" shape="14668.13,54905.76 14667.99,54905.87"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_6" function="internal">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_6_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="18.83" shape="14668.13,54905.76 14663.16,54908.25 14659.45,54909.33 14655.73,54910.41 14650.77,54912.90"/>
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_6_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="18.83" shape="14666.43,54903.04 14661.48,54905.53 14657.77,54906.61 14654.06,54907.68 14649.10,54910.17"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_8" function="internal">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_8_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="10.75" length="22.56" shape="14664.74,54900.33 14660.36,54901.37 14655.60,54899.40 14650.45,54894.41 14647.19,54889.70"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_9" function="internal">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_9_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="6.04" length="16.76" shape="14664.74,54900.33 14659.57,54900.17 14656.83,54898.49 14656.53,54895.30 14658.67,54890.59"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_17" function="internal">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_17_0" index="0" allow="bicycle" speed="7.00" length="4.81" width="1.50" shape="14664.77,54912.03 14664.66,54912.17 14664.16,54914.39 14664.89,54916.62"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_18" function="internal">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_18_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="7.86" length="13.43" shape="14667.99,54905.87 14664.92,54908.27 14663.19,54910.99 14662.94,54913.92 14664.17,54917.06"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_19" function="internal">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_19_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="10.75" length="4.01" shape="14647.19,54889.70 14644.91,54886.41"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_10" function="internal">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_10_0" index="0" allow="bicycle" speed="7.20" length="7.56" width="1.50" shape="14640.87,54896.71 14643.62,54894.56 14645.09,54892.19 14645.18,54890.91"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_11" function="internal">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_11_0" index="0" allow="bicycle" speed="13.89" length="18.39" width="1.50" shape="14640.87,54896.71 14655.73,54885.88"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_12" function="internal">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_12_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="8.06" length="7.36" shape="14642.10,54898.72 14645.08,54896.25 14646.55,54893.37 14646.54,54893.11"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_13" function="internal">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_13_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="18.42" shape="14642.10,54898.72 14656.97,54887.87"/>
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_13_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="18.42" shape="14643.77,54901.45 14658.67,54890.59"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_20" function="internal">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_20_0" index="0" allow="bicycle" speed="7.20" length="4.28" width="1.50" shape="14645.18,54890.91 14645.28,54889.62 14644.18,54886.84"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_21" function="internal">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_21_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="8.06" length="7.03" shape="14646.54,54893.11 14646.49,54890.09 14644.91,54886.41"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c0" function="crossing" crossingEdges="23055276#1 -23055276#1">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c0_0" index="0" allow="pedestrian" speed="2.78" length="6.40" width="4.00" shape="14664.50,54914.52 14659.02,54917.84"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c1" function="crossing" crossingEdges="23055403#1">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c1_0" index="0" allow="pedestrian" speed="2.78" length="3.20" width="4.00" shape="14644.57,54888.94 14647.31,54887.29"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c2" function="crossing" crossingEdges="228126461#1">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c2_0" index="0" allow="pedestrian" speed="2.78" length="7.90" width="4.00" shape="14646.31,54901.78 14642.20,54895.03"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c3" function="crossing" crossingEdges="316778911#1">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c3_0" index="0" allow="pedestrian" speed="2.78" length="9.60" width="4.00" shape="14654.98,54915.95 14649.97,54907.76"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w0" function="walkingarea">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w0_0" index="0" allow="pedestrian" speed="2.78" length="3.91" width="4.00" shape="14653.27,54916.99 14654.83,54919.55 14654.05,54918.27 14655.09,54919.97 14658.35,54920.58 14660.06,54919.55 14659.05,54918.12 14657.99,54917.09 14656.88,54916.46 14655.73,54916.24 14654.52,54916.42"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w1" function="walkingarea">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w1_0" index="0" allow="pedestrian" speed="2.78" length="5.79" width="4.00" shape="14665.53,54916.24 14667.25,54915.20 14671.34,54910.94 14669.78,54908.38 14667.82,54909.72 14666.38,54911.04 14665.43,54912.35 14664.97,54913.66 14665.01,54914.95"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w2" function="walkingarea">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w2_0" index="0" allow="pedestrian" speed="2.78" length="7.95" width="4.00" shape="14655.33,54885.24 14653.75,54882.70 14646.28,54885.58 14647.18,54886.64 14648.32,54887.26 14649.71,54887.42 14651.34,54887.14 14653.21,54886.42"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w3" function="walkingarea">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w3_0" index="0" allow="pedestrian" speed="2.78" length="5.64" width="4.00" shape="14643.54,54887.23 14641.83,54888.26 14638.92,54893.51 14640.48,54896.07 14642.27,54894.79 14643.55,54893.44 14644.32,54892.00 14644.57,54890.49 14644.31,54888.90"/>
+    </edge>
+    <edge id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w4" function="walkingarea">
+        <lane id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w4_0" index="0" allow="pedestrian" speed="2.78" length="7.01" width="4.00" shape="14651.68,54906.72 14648.26,54908.80 14644.60,54902.82 14648.01,54900.74"/>
+    </edge>
+
+    <edge id="-161847018#2" from="248782310" to="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" priority="3" type="highway.residential" shape="14774.75,54958.14 14727.30,54880.19 14724.86,54876.18">
+        <lane id="-161847018#2_0" index="0" allow="pedestrian" speed="8.33" length="93.46" width="2.00" shape="14771.16,54960.32 14723.71,54882.37 14722.57,54880.49">
+            <param key="origId" value="161847018"/>
+        </lane>
+        <lane id="-161847018#2_1" index="1" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="8.33" length="93.46" shape="14773.38,54958.97 14725.93,54881.02 14724.79,54879.14">
+            <param key="origId" value="161847018"/>
+        </lane>
+        <param key="origTo" value="6840644262"/>
+    </edge>
+    <edge id="-23055276#1" from="cluster_1345594333_248782320" to="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" priority="3" type="highway.residential" shape="14710.85,54996.80 14671.92,54932.98 14661.12,54915.12">
+        <lane id="-23055276#1_0" index="0" allow="pedestrian" speed="8.33" length="92.40" width="2.00" shape="14707.27,54998.99 14668.33,54935.16 14659.20,54920.07">
+            <param key="origId" value="23055276"/>
+        </lane>
+        <lane id="-23055276#1_1" index="1" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="8.33" length="92.40" shape="14709.49,54997.64 14670.55,54933.81 14661.43,54918.72">
+            <param key="origId" value="23055276"/>
+        </lane>
+        <param key="origFrom" value="248782320"/>
+        <param key="origTo" value="6840644263"/>
+    </edge>
+    <edge id="-23055404#2" from="2756692672" to="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" priority="3" type="highway.residential" shape="14701.24,54837.32 14706.71,54846.30 14706.96,54846.72 14709.90,54851.56">
+        <lane id="-23055404#2_0" index="0" allow="pedestrian" speed="8.33" length="12.71" width="2.00" shape="14704.83,54835.14 14710.30,54844.12 14710.55,54844.54 14711.43,54845.99" changeLeft="authority" changeRight="authority">
+            <param key="origId" value="23055404"/>
+        </lane>
+        <lane id="-23055404#2_1" index="1" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="8.33" length="12.71" shape="14702.61,54836.49 14708.08,54845.47 14708.33,54845.89 14709.21,54847.34" changeLeft="authority" changeRight="authority">
+            <param key="origId" value="23055404"/>
+        </lane>
+        <param key="origTo" value="6837803237"/>
+    </edge>
+    <edge id="-270655649#0" from="cluster_248783357_6837763859" to="2756692672" priority="3" type="highway.residential" shape="14650.57,54754.17 14701.24,54837.32">
+        <lane id="-270655649#0_0" index="0" allow="pedestrian" speed="8.33" length="98.86" width="2.00" shape="14653.38,54750.71 14704.83,54835.13">
+            <param key="origId" value="270655649"/>
+        </lane>
+        <lane id="-270655649#0_1" index="1" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="8.33" length="98.86" shape="14651.16,54752.06 14702.61,54836.49">
+            <param key="origId" value="270655649"/>
+        </lane>
+        <param key="origFrom" value="6837763859"/>
+    </edge>
+    <edge id="-729913426" from="6837583246" to="6837583242" priority="1" type="highway.service" shape="14606.32,54879.62 14605.29,54877.84 14605.67,54875.15 14608.56,54872.61 14628.42,54860.94">
+        <lane id="-729913426_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="30.12" shape="14604.94,54880.42 14603.63,54878.16 14604.17,54874.34 14607.62,54871.31 14624.05,54861.65">
+            <param key="origId" value="729913426"/>
+        </lane>
+    </edge>
+    <edge id="161847018#1" from="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" to="248782310" priority="3" type="highway.residential" shape="14724.86,54876.18 14727.30,54880.19 14774.75,54958.14">
+        <lane id="161847018#1_0" index="0" allow="pedestrian" speed="8.33" length="93.46" width="2.00" shape="14729.74,54876.12 14730.89,54878.01 14778.34,54955.96">
+            <param key="origId" value="161847018"/>
+        </lane>
+        <lane id="161847018#1_1" index="1" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="8.33" length="93.46" shape="14727.52,54877.48 14728.67,54879.36 14776.12,54957.31">
+            <param key="origId" value="161847018"/>
+        </lane>
+        <param key="origFrom" value="6840644262"/>
+    </edge>
+    <edge id="189776988#0" from="9916479123" to="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" priority="1" type="highway.footway" spreadType="center" shape="14718.10,54846.54 14721.63,54852.17">
+        <lane id="189776988#0_0" index="0" allow="pedestrian" speed="2.78" length="0.20" width="2.00" shape="14717.15,54845.03 14717.26,54845.19">
+            <param key="origId" value="189776988"/>
+        </lane>
+        <param key="origTo" value="2003822358"/>
+    </edge>
+    <edge id="189776988#2" from="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" to="9916479124" priority="1" type="highway.footway" spreadType="center" shape="14729.37,54864.92 14733.01,54871.20">
+        <lane id="189776988#2_0" index="0" allow="pedestrian" speed="2.78" length="0.20" width="2.00" shape="14733.25,54871.62 14733.35,54871.79">
+            <param key="origId" value="189776988"/>
+        </lane>
+        <param key="origFrom" value="2003822357"/>
+    </edge>
+    <edge id="228126460#0" from="5299018918" to="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" name="Bismarckstraße" priority="12" type="cycleway.lane|highway.primary" spreadType="center" shape="14684.83,54894.45 14666.81,54905.45">
+        <lane id="228126460#0_0" index="0" allow="pedestrian" speed="13.89" length="16.15" width="3.00" shape="14684.31,54901.27 14670.56,54909.66">
+            <param key="origId" value="228126460"/>
+        </lane>
+        <lane id="228126460#0_1" index="1" allow="bicycle" speed="13.89" length="16.15" width="1.50" shape="14683.14,54899.35 14669.37,54907.75">
+            <param key="origId" value="228126460"/>
+        </lane>
+        <lane id="228126460#0_2" index="2" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="16.15" shape="14681.91,54897.34 14668.13,54905.76">
+            <param key="origId" value="228126460"/>
+        </lane>
+        <lane id="228126460#0_3" index="3" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="16.15" shape="14680.24,54894.61 14666.43,54903.04">
+            <param key="origId" value="228126460"/>
+        </lane>
+        <lane id="228126460#0_4" index="4" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="16.15" shape="14678.58,54891.88 14664.74,54900.33">
+            <param key="origId" value="228126460"/>
+        </lane>
+        <param key="origTo" value="2003822285"/>
+        <param key="ref" value="B 37;B 38"/>
+    </edge>
+    <edge id="228126461#1" from="cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261" to="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" name="Bismarckstraße" priority="12" type="cycleway.lane|highway.primary" spreadType="center" shape="14584.87,54932.60 14641.68,54898.21">
+        <lane id="228126461#1_0" index="0" allow="pedestrian" speed="13.89" length="75.04" width="3.00" shape="14575.51,54933.65 14639.70,54894.79">
+            <param key="origId" value="228126461"/>
+        </lane>
+        <lane id="228126461#1_1" index="1" allow="bicycle" speed="13.89" length="75.04" width="1.50" shape="14576.68,54935.57 14640.87,54896.71">
+            <param key="origId" value="228126461"/>
+        </lane>
+        <lane id="228126461#1_2" index="2" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="75.04" shape="14577.90,54937.58 14642.10,54898.72">
+            <param key="origId" value="228126461"/>
+        </lane>
+        <lane id="228126461#1_3" index="3" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="75.04" shape="14579.56,54940.31 14643.77,54901.45">
+            <param key="origId" value="228126461"/>
+        </lane>
+        <param key="origFrom" value="2003822277"/>
+        <param key="origTo" value="9916511952"/>
+        <param key="ref" value="B 37;B 38"/>
+    </edge>
+    <edge id="23055276#1" from="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" to="cluster_1345594333_248782320" priority="3" type="highway.residential" shape="14661.12,54915.12 14671.92,54932.98 14710.85,54996.80">
+        <lane id="23055276#1_0" index="0" allow="pedestrian" speed="8.33" length="92.38" width="2.00" shape="14666.39,54915.72 14675.51,54930.80 14714.44,54994.62">
+            <param key="origId" value="23055276"/>
+        </lane>
+        <lane id="23055276#1_1" index="1" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="8.33" length="92.38" shape="14664.17,54917.06 14673.29,54932.15 14712.22,54995.97">
+            <param key="origId" value="23055276"/>
+        </lane>
+        <param key="origFrom" value="6840644263"/>
+        <param key="origTo" value="248782320"/>
+    </edge>
+    <edge id="23055403#1" from="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" to="6837583242" priority="3" type="highway.residential" spreadType="center" shape="14645.74,54889.72 14628.42,54860.94">
+        <lane id="23055403#1_0" index="0" allow="pedestrian" speed="8.33" length="25.65" width="2.00" shape="14642.68,54887.75 14629.46,54865.77">
+            <param key="origId" value="23055403"/>
+        </lane>
+        <lane id="23055403#1_1" index="1" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="8.33" length="25.65" shape="14644.91,54886.41 14631.69,54864.43">
+            <param key="origId" value="23055403"/>
+        </lane>
+        <param key="origFrom" value="6837803238"/>
+    </edge>
+    <edge id="23055403#2" from="6837583242" to="cluster_248783355_4311213717" priority="3" type="highway.residential" spreadType="center" shape="14628.42,54860.94 14587.31,54792.60">
+        <lane id="23055403#2_0" index="0" allow="pedestrian" speed="8.33" length="76.61" width="2.00" shape="14624.61,54857.71 14585.12,54792.06">
+            <param key="origId" value="23055403"/>
+        </lane>
+        <lane id="23055403#2_1" index="1" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="8.33" length="76.61" shape="14626.84,54856.37 14587.35,54790.72">
+            <param key="origId" value="23055403"/>
+        </lane>
+        <param key="origTo" value="4311213717"/>
+    </edge>
+    <edge id="23055404#1" from="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" to="2756692672" priority="3" type="highway.residential" shape="14709.90,54851.56 14706.96,54846.72 14706.71,54846.30 14701.24,54837.32">
+        <lane id="23055404#1_0" index="0" allow="pedestrian" speed="8.33" length="12.70" width="2.00" shape="14704.25,54850.35 14703.37,54848.90 14703.11,54848.47 14697.65,54839.50" changeLeft="authority" changeRight="authority">
+            <param key="origId" value="23055404"/>
+        </lane>
+        <lane id="23055404#1_1" index="1" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="8.33" length="12.70" shape="14706.48,54849.00 14705.59,54847.55 14705.34,54847.13 14699.87,54838.15" changeLeft="authority" changeRight="authority">
+            <param key="origId" value="23055404"/>
+        </lane>
+        <param key="origFrom" value="6837803237"/>
+    </edge>
+    <edge id="249375697#1" from="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" to="cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260" name="Bismarckstraße" priority="12" type="cycleway.lane|highway.primary" spreadType="center" shape="14720.60,54850.46 14762.24,54825.23 14768.54,54821.66">
+        <lane id="249375697#1_0" index="0" allow="pedestrian" speed="13.89" length="70.71" width="3.00" shape="14719.74,54844.49 14759.43,54820.44 14780.62,54808.43">
+            <param key="origId" value="249375697"/>
+        </lane>
+        <lane id="249375697#1_1" index="1" allow="bicycle" speed="13.89" length="70.71" width="1.50" shape="14720.91,54846.41 14760.57,54822.38 14781.82,54810.34">
+            <param key="origId" value="249375697"/>
+        </lane>
+        <lane id="249375697#1_2" index="2" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="70.71" shape="14722.13,54848.42 14761.76,54824.41 14783.01,54812.37">
+            <param key="origId" value="249375697"/>
+        </lane>
+        <lane id="249375697#1_3" index="3" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="70.71" shape="14723.79,54851.16 14763.38,54827.17 14784.59,54815.15">
+            <param key="origId" value="249375697"/>
+        </lane>
+        <lane id="249375697#1_4" index="4" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="70.71" shape="14725.44,54853.90 14765.00,54829.93 14786.16,54817.94">
+            <param key="origId" value="249375697"/>
+        </lane>
+        <param key="origFrom" value="2003822358"/>
+        <param key="ref" value="B 37;B 38"/>
+    </edge>
+    <edge id="251158322#1" from="cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260" to="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" name="Bismarckstraße" priority="12" type="cycleway.lane|highway.primary" spreadType="center" shape="14777.69,54836.21 14737.64,54862.45 14730.37,54866.65">
+        <lane id="251158322#1_0" index="0" allow="pedestrian" speed="13.89" length="71.07" width="3.00" shape="14794.16,54830.14 14739.71,54865.81 14734.49,54868.83">
+            <param key="origId" value="251158322"/>
+        </lane>
+        <lane id="251158322#1_1" index="1" allow="bicycle" speed="13.89" length="71.07" width="1.50" shape="14792.97,54828.23 14738.53,54863.90 14733.33,54866.91">
+            <param key="origId" value="251158322"/>
+        </lane>
+        <lane id="251158322#1_2" index="2" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="71.07" shape="14791.73,54826.24 14737.30,54861.90 14732.11,54864.90">
+            <param key="origId" value="251158322"/>
+        </lane>
+        <lane id="251158322#1_3" index="3" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="71.07" shape="14790.03,54823.52 14735.62,54859.17 14730.45,54862.16">
+            <param key="origId" value="251158322"/>
+        </lane>
+        <param key="origTo" value="2003822357"/>
+        <param key="ref" value="B 37;B 38"/>
+    </edge>
+    <edge id="270655649#0" from="2756692672" to="cluster_248783357_6837763859" priority="3" type="highway.residential" shape="14701.24,54837.32 14650.57,54754.17">
+        <lane id="270655649#0_0" index="0" allow="pedestrian" speed="8.33" length="98.86" width="2.00" shape="14697.65,54839.51 14646.21,54755.08">
+            <param key="origId" value="270655649"/>
+        </lane>
+        <lane id="270655649#0_1" index="1" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="8.33" length="98.86" shape="14699.87,54838.15 14648.43,54753.73">
+            <param key="origId" value="270655649"/>
+        </lane>
+        <param key="origTo" value="6837763859"/>
+    </edge>
+    <edge id="316778911#1" from="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" to="cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261" name="Bismarckstraße" priority="12" type="highway.primary" spreadType="center" shape="14651.53,54914.19 14599.32,54946.07 14594.75,54948.86">
+        <lane id="316778911#1_0" index="0" allow="pedestrian" speed="13.89" length="75.08" width="3.00" shape="14654.05,54918.27 14601.82,54950.17 14589.96,54957.41">
+            <param key="origId" value="316778911"/>
+        </lane>
+        <lane id="316778911#1_1" index="1" allow="bicycle" speed="13.89" length="75.08" shape="14652.44,54915.63 14600.21,54947.52 14588.35,54954.76">
+            <param key="origId" value="316778911"/>
+        </lane>
+        <lane id="316778911#1_2" index="2" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="75.08" shape="14650.77,54912.90 14598.54,54944.79 14586.69,54952.02">
+            <param key="origId" value="316778911"/>
+        </lane>
+        <lane id="316778911#1_3" index="3" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="75.08" shape="14649.10,54910.17 14596.87,54942.06 14585.02,54949.29">
+            <param key="origId" value="316778911"/>
+        </lane>
+        <param key="origFrom" value="9916511953"/>
+        <param key="origTo" value="2003822278"/>
+        <param key="ref" value="B 37;B 38"/>
+    </edge>
+    <edge id="462537200#1" from="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" to="J47" name="Bismarckstraße" priority="12" type="cycleway.lane|highway.primary" spreadType="center" shape="14656.63,54887.32 14673.84,54876.59">
+        <lane id="462537200#1_0" index="0" allow="pedestrian" speed="13.89" length="18.65" width="3.00" shape="14654.54,54883.97 14670.36,54874.10">
+            <param key="origId" value="462537200"/>
+        </lane>
+        <lane id="462537200#1_1" index="1" allow="bicycle" speed="13.89" length="18.65" width="1.50" shape="14655.73,54885.88 14671.55,54876.01">
+            <param key="origId" value="462537200"/>
+        </lane>
+        <lane id="462537200#1_2" index="2" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="18.65" shape="14656.97,54887.87 14672.80,54878.01">
+            <param key="origId" value="462537200"/>
+        </lane>
+        <lane id="462537200#1_3" index="3" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="18.65" shape="14658.67,54890.59 14674.49,54880.72">
+            <param key="origId" value="462537200"/>
+        </lane>
+        <param key="origFrom" value="2003822284"/>
+        <param key="origTo" value="248783356"/>
+        <param key="ref" value="B 37;B 38"/>
+    </edge>
+    <edge id="462537200#1.25" from="J47" to="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" name="Bismarckstraße" priority="12" type="cycleway.lane|highway.primary" spreadType="center" shape="14678.86,54875.72 14697.83,54864.24 14712.30,54855.48">
+        <lane id="462537200#1.25_0" index="0" allow="pedestrian" speed="13.89" length="30.70" width="3.00" shape="14677.38,54870.13 14694.96,54859.49 14703.63,54854.24">
+            <param key="origId" value="462537200"/>
+        </lane>
+        <lane id="462537200#1.25_1" index="1" allow="bicycle" speed="13.89" length="30.70" width="1.50" shape="14678.54,54872.06 14696.12,54861.42 14704.80,54856.16">
+            <param key="origId" value="462537200"/>
+        </lane>
+        <lane id="462537200#1.25_2" index="2" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="30.70" shape="14679.76,54874.07 14697.34,54863.43 14706.02,54858.17">
+            <param key="origId" value="462537200"/>
+        </lane>
+        <lane id="462537200#1.25_3" index="3" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="30.70" shape="14681.41,54876.80 14699.00,54866.16 14707.69,54860.90">
+            <param key="origId" value="462537200"/>
+        </lane>
+        <lane id="462537200#1.25_4" index="4" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="30.70" shape="14683.07,54879.54 14700.65,54868.90 14709.36,54863.63">
+            <param key="origId" value="462537200"/>
+        </lane>
+        <param key="origFrom" value="2003822284"/>
+        <param key="origTo" value="248783356"/>
+        <param key="ref" value="B 37;B 38"/>
+    </edge>
+    <edge id="548514765" from="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" to="5299018918" name="Bismarckstraße" priority="12" type="cycleway.lane|highway.primary" spreadType="center" shape="14722.13,54871.69 14684.83,54894.45">
+        <lane id="548514765_0" index="0" allow="pedestrian" speed="13.89" length="32.99" width="3.00" shape="14718.46,54878.56 14690.30,54895.74">
+            <param key="origId" value="548514765"/>
+        </lane>
+        <lane id="548514765_1" index="1" allow="bicycle" speed="13.89" length="32.99" width="1.50" shape="14717.29,54876.64 14689.13,54893.82">
+            <param key="origId" value="548514765"/>
+        </lane>
+        <lane id="548514765_2" index="2" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="32.99" shape="14716.06,54874.63 14687.91,54891.81">
+            <param key="origId" value="548514765"/>
+        </lane>
+        <lane id="548514765_3" index="3" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="32.99" shape="14714.40,54871.90 14686.24,54889.08">
+            <param key="origId" value="548514765"/>
+        </lane>
+        <param key="origFrom" value="248782308"/>
+        <param key="ref" value="B 37;B 38"/>
+    </edge>
+    <edge id="729913426" from="6837583242" to="6837583246" priority="1" type="highway.service" shape="14628.42,54860.94 14608.56,54872.61 14605.67,54875.15 14605.29,54877.84 14606.32,54879.62">
+        <lane id="729913426_0" index="0" allow="pedestrian delivery bicycle" speed="5.56" length="24.93" shape="14625.67,54864.41 14609.50,54873.91 14607.17,54875.96 14606.95,54877.52 14607.70,54878.82">
+            <param key="origId" value="729913426"/>
+        </lane>
+    </edge>
+    <edge id="729932388#10" from="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" to="9916479123" priority="1" type="highway.footway" spreadType="center" shape="14709.90,54851.56 14718.10,54846.54">
+        <lane id="729932388#10_0" index="0" allow="pedestrian" speed="2.78" length="0.20" width="2.00" shape="14717.59,54846.85 14717.76,54846.75">
+            <param key="origId" value="729932388"/>
+        </lane>
+        <param key="origFrom" value="6837803237"/>
+    </edge>
+    <edge id="729932388#11" from="9916479123" to="cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260" priority="1" type="highway.footway" spreadType="center" shape="14718.10,54846.54 14764.17,54818.34">
+        <lane id="729932388#11_0" index="0" allow="pedestrian" speed="2.78" length="71.72" width="2.00" shape="14719.38,54845.76 14780.55,54808.31">
+            <param key="origId" value="729932388"/>
+        </lane>
+    </edge>
+    <edge id="730196340#3" from="cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260" to="9916479124" priority="1" type="highway.footway" spreadType="center" shape="14781.15,54841.11 14733.01,54871.20">
+        <lane id="730196340#3_0" index="0" allow="pedestrian" speed="2.78" length="72.10" width="2.00" shape="14795.43,54832.19 14734.29,54870.40">
+            <param key="origId" value="730196340"/>
+        </lane>
+    </edge>
+    <edge id="730196340#4" from="9916479124" to="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" priority="1" type="highway.footway" spreadType="center" shape="14733.01,54871.20 14724.86,54876.18">
+        <lane id="730196340#4_0" index="0" allow="pedestrian" speed="2.78" length="0.20" width="2.00" shape="14732.68,54871.40 14732.51,54871.51">
+            <param key="origId" value="730196340"/>
+        </lane>
+        <param key="origTo" value="6840644262"/>
+    </edge>
+    <edge id="730196340#7" from="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" to="cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261" priority="1" type="highway.footway" spreadType="center" shape="14654.57,54919.12 14597.80,54953.82">
+        <lane id="730196340#7_0" index="0" allow="pedestrian" speed="2.78" length="75.10" width="2.00" shape="14654.57,54919.12 14590.50,54958.28">
+            <param key="origId" value="730196340"/>
+        </lane>
+    </edge>
+
+    <tlLogic id="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" type="actuated" programID="0" offset="0">
+        <phase duration="33" state="rrrgGgGGrrrgGgGGGggrrGG" minDur="5" maxDur="50"/>
+        <phase duration="3"  state="rrryyyyyrrryyyyyyggrryy"/>
+        <phase duration="6"  state="rrrrrrrrrrrGGgGGGGGrrrr" minDur="5" maxDur="50"/>
+        <phase duration="3"  state="rrrrrrrrrrryyyyyyyyrrrr"/>
+        <phase duration="32" state="GGGrrrrrggGrrrrrrrrGGrr" minDur="5" maxDur="50"/>
+        <phase duration="3"  state="yyyrrrrryyyrrrrrrrryyrr"/>
+    </tlLogic>
+    <tlLogic id="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" type="actuated" programID="0" offset="0">
+        <phase duration="20" state="ggGrrrrrrrrrrrrrrGG" minDur="5" maxDur="50"/>
+        <phase duration="3"  state="yyyrrrrrrrrrrrrrryy"/>
+        <phase duration="22" state="rrrgGgGGgGrrrrrGGGr" minDur="5" maxDur="50"/>
+        <phase duration="3"  state="rrryyyyyyyrrrrryyyr"/>
+        <phase duration="22" state="rrrrrrrrrrgGgGGGGrG" minDur="5" maxDur="50"/>
+        <phase duration="3"  state="rrrrrrrrrryyyyyyrry"/>
+    </tlLogic>
+
+    <junction id="248782310" type="right_before_left" x="14774.75" y="54958.14" incLanes="161847018#1_0 161847018#1_1 :248782310_w0_0" intLanes=":248782310_0_0 :248782310_c0_0" shape="14774.75,54958.14 14779.19,54955.44 14774.75,54958.14">
+        <request index="0" response="00" foes="10" cont="0"/>
+        <request index="1" response="01" foes="01" cont="0"/>
+    </junction>
+    <junction id="2756692672" type="priority" x="14701.24" y="54837.32" incLanes="23055404#1_0 23055404#1_1 -270655649#0_0 -270655649#0_1" intLanes=":2756692672_0_0 :2756692672_1_0" shape="14696.80,54840.03 14705.68,54834.62 14696.80,54840.03">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="5299018918" type="priority" x="14683.79" y="54892.75" incLanes="548514765_0 548514765_1 548514765_2 548514765_3" intLanes=":5299018918_0_0 :5299018918_0_1 :5299018918_0_2 :5299018918_0_3" shape="14691.08,54897.02 14685.41,54887.71 14682.65,54888.91 14680.50,54889.32 14679.28,54889.72 14677.74,54890.52 14685.09,54902.55 14687.42,54900.64 14688.76,54898.93 14689.67,54898.02">
+        <request index="0" response="0000" foes="0000" cont="0"/>
+        <request index="1" response="0000" foes="0000" cont="0"/>
+        <request index="2" response="0000" foes="0000" cont="0"/>
+        <request index="3" response="0000" foes="0000" cont="0"/>
+    </junction>
+    <junction id="6837583242" type="priority" x="14628.42" y="54860.94" incLanes="23055403#1_0 23055403#1_1 -729913426_0" intLanes=":6837583242_0_0 :6837583242_1_0 :6837583242_2_0 :6837583242_3_0" shape="14628.60,54866.28 14633.06,54863.60 14628.21,54855.55 14623.76,54858.23 14624.04,54859.03 14624.01,54859.38 14623.87,54859.71 14623.61,54860.01 14623.24,54860.27 14626.48,54865.79 14627.31,54865.49 14627.68,54865.52 14628.02,54865.66 14628.33,54865.91">
+        <request index="0" response="0000" foes="1000" cont="0"/>
+        <request index="1" response="0000" foes="0100" cont="0"/>
+        <request index="2" response="0010" foes="0010" cont="0"/>
+        <request index="3" response="0001" foes="0001" cont="0"/>
+    </junction>
+    <junction id="6837583246" type="priority" x="14606.32" y="54879.62" incLanes="729913426_0" intLanes=":6837583246_0_0" shape="14606.32,54879.62 14609.09,54878.02 14606.32,54879.62">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="9916479123" type="dead_end" x="14718.10" y="54846.54" incLanes="729932388#10_0" intLanes="" shape="14717.52,54847.50 14719.22,54846.44 14718.54,54845.88 14718.09,54845.81 14717.57,54845.89 14716.97,54846.11 14716.30,54846.47 14717.34,54848.18 14719.90,54846.61 14718.86,54844.90 14717.76,54845.78 14717.45,54846.21 14717.31,54846.64 14717.34,54847.07"/>
+    <junction id="9916479124" type="dead_end" x="14733.01" y="54871.20" incLanes="730196340#3_0 189776988#2_0" intLanes="" shape="14734.82,54871.25 14733.76,54869.55 14731.20,54871.13 14732.25,54872.84 14733.34,54871.97 14733.65,54871.54 14733.80,54871.11 14733.78,54870.68 14733.61,54870.25 14731.88,54871.25 14732.56,54871.85 14733.01,54871.92 14733.53,54871.85 14734.14,54871.62"/>
+    <junction id="J47" type="priority" x="14678.86" y="54875.72" incLanes="462537200#1_0 462537200#1_1 462537200#1_2 462537200#1_3" intLanes=":J47_0_0 :J47_0_1 :J47_0_2 :J47_0_3" shape="14683.90,54880.91 14676.60,54868.85 14669.57,54872.83 14675.34,54882.08 14678.36,54881.26 14679.61,54881.48 14680.85,54881.70 14682.24,54881.62">
+        <request index="0" response="0000" foes="0000" cont="0"/>
+        <request index="1" response="0000" foes="0000" cont="0"/>
+        <request index="2" response="0000" foes="0000" cont="0"/>
+        <request index="3" response="0000" foes="0000" cont="0"/>
+    </junction>
+    <junction id="cluster_1345594333_248782320" type="right_before_left" x="14712.43" y="54995.84" incLanes="23055276#1_0 23055276#1_1 :cluster_1345594333_248782320_w0_0" intLanes=":cluster_1345594333_248782320_0_0 :cluster_1345594333_248782320_c0_0" shape="14710.85,54996.80 14715.29,54994.09 14710.85,54996.80">
+        <request index="0" response="00" foes="10" cont="0"/>
+        <request index="1" response="01" foes="01" cont="0"/>
+    </junction>
+    <junction id="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" type="traffic_light" x="14720.03" y="54862.00" incLanes="-161847018#2_0 -161847018#2_1 730196340#4_0 251158322#1_0 251158322#1_1 251158322#1_2 251158322#1_3 189776988#0_0 -23055404#2_0 -23055404#2_1 462537200#1.25_0 462537200#1.25_1 462537200#1.25_2 462537200#1.25_3 462537200#1.25_4 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w5_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w1_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w3_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w0_0" intLanes=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_0_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_0_1 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_2_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_19_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_4_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_20_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_6_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_6_1 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_21_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_22_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_10_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_23_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_12_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_24_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_14_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_14_1 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_14_2 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_25_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_26_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c0_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c1_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c2_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c3_0" shape="14732.99,54873.16 14734.72,54872.16 14735.27,54870.11 14718.97,54843.21 14716.88,54842.72 14715.19,54843.78 14719.06,54847.13 14718.01,54845.42 14712.29,54845.47 14703.40,54850.87 14703.68,54851.68 14703.65,54852.04 14703.50,54852.37 14703.23,54852.68 14702.84,54852.96 14719.24,54879.84 14720.09,54879.62 14720.50,54879.74 14720.91,54880.01 14721.31,54880.43 14721.71,54881.01 14730.60,54875.60 14733.98,54871.78 14732.93,54870.07">
+        <request index="0"  response="10000000000000000010000" foes="10000000000000000010000" cont="0"/>
+        <request index="1"  response="10000000000000011010000" foes="10000000000000011010000" cont="0"/>
+        <request index="2"  response="11000111111100011010000" foes="11000111111100011010000" cont="0"/>
+        <request index="3"  response="10010000000000000000000" foes="10010100000010000100000" cont="1"/>
+        <request index="4"  response="00010000000000000000000" foes="00010100000010000100111" cont="0"/>
+        <request index="5"  response="10010000000000000011000" foes="10010100000010000011000" cont="1"/>
+        <request index="6"  response="00010000000000000000000" foes="00011100000010000000110" cont="0"/>
+        <request index="7"  response="00010000000000000000000" foes="00011100000010000000110" cont="0"/>
+        <request index="8"  response="01100000001000000000000" foes="01100000001000000000000" cont="1"/>
+        <request index="9"  response="01100011101000000000000" foes="01100011101000000000000" cont="1"/>
+        <request index="10" response="11000111101000011111000" foes="11000111101000011111000" cont="0"/>
+        <request index="11" response="01000000000000000000000" foes="01000000010000000000100" cont="1"/>
+        <request index="12" response="00100000000001100000000" foes="00100000010011100000100" cont="0"/>
+        <request index="13" response="01000000001100000000000" foes="01000000001100000000100" cont="1"/>
+        <request index="14" response="00100000000001000000000" foes="00100000000011000000100" cont="0"/>
+        <request index="15" response="00100000000001000000000" foes="00100000000011000000100" cont="0"/>
+        <request index="16" response="00100000000001000000000" foes="00100000000011000000100" cont="0"/>
+        <request index="17" response="10000000000000011111000" foes="10000000000010011111100" cont="1"/>
+        <request index="18" response="00000000000000011000000" foes="00000000000000011000000" cont="1"/>
+        <request index="19" response="00000000000000000000000" foes="00000000000000011111000" cont="0"/>
+        <request index="20" response="00000000000000000000000" foes="00000011101001100000000" cont="0"/>
+        <request index="21" response="00000000000000000000000" foes="00000000010111100000100" cont="0"/>
+        <request index="22" response="00000000000000000000000" foes="00000100000010000101111" cont="0"/>
+    </junction>
+    <junction id="cluster_248783355_4311213717" type="dead_end" x="14586.49" y="54791.24" incLanes="23055403#2_0 23055403#2_1" intLanes="" shape="14584.26,54792.58 14588.72,54789.90"/>
+    <junction id="cluster_248783357_6837763859" type="priority" x="14649.79" y="54752.90" incLanes="270655649#0_0 270655649#0_1 :cluster_248783357_6837763859_w0_0" intLanes=":cluster_248783357_6837763859_0_0 :cluster_248783357_6837763859_c0_0" shape="14649.79,54752.90 14645.35,54755.60 14649.79,54752.90">
+        <request index="0" response="00" foes="10" cont="0"/>
+        <request index="1" response="01" foes="01" cont="0"/>
+    </junction>
+    <junction id="cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260" type="dead_end" x="14782.68" y="54811.79" incLanes="249375697#1_0 249375697#1_1 249375697#1_2 249375697#1_3 249375697#1_4 729932388#11_0 :cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260_w0_0 :cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260_w1_0" intLanes="" shape="14789.39,54822.03 14795.36,54831.15 14794.90,54831.34 14795.96,54833.03 14780.03,54807.46 14781.07,54809.17 14780.00,54807.06 14786.95,54819.33"/>
+    <junction id="cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261" type="dead_end" x="14582.52" y="54945.24" incLanes="316778911#1_0 316778911#1_1 316778911#1_2 316778911#1_3 730196340#7_0 :cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261_w1_0 :cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261_w0_0" intLanes="" shape="14590.73,54958.69 14584.17,54947.94 14580.37,54941.69 14574.73,54932.37 14591.02,54959.14 14589.97,54957.43"/>
+    <junction id="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" type="traffic_light" x="14649.11" y="54905.01" incLanes="-23055276#1_0 -23055276#1_1 228126460#0_0 228126460#0_1 228126460#0_2 228126460#0_3 228126460#0_4 228126461#1_0 228126461#1_1 228126461#1_2 228126461#1_3 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w1_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w3_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w4_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w0_0" intLanes=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_15_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_16_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_2_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_17_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_4_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_18_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_6_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_6_1 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_19_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_9_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_20_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_11_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_21_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_13_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_13_1 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c0_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c1_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c2_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c3_0" shape="14658.35,54920.58 14667.25,54915.20 14667.36,54914.16 14667.88,54913.49 14668.73,54912.73 14669.88,54911.88 14671.35,54910.94 14653.75,54882.70 14651.68,54883.93 14649.94,54884.87 14648.54,54885.50 14647.46,54885.83 14646.71,54885.86 14646.28,54885.58 14641.83,54888.26 14642.19,54889.98 14641.87,54890.85 14641.22,54891.73 14640.23,54892.62 14638.92,54893.51 14655.09,54919.97 14656.39,54919.47 14656.96,54919.48 14657.47,54919.67 14657.94,54920.04">
+        <request index="0"  response="1001000000000010000" foes="1001000000000010000" cont="1"/>
+        <request index="1"  response="1001000000011010000" foes="1001000000011010000" cont="1"/>
+        <request index="2"  response="0011111110111010000" foes="0011111110111010000" cont="0"/>
+        <request index="3"  response="0001000000000000000" foes="0001000000000100000" cont="1"/>
+        <request index="4"  response="1000000000000000011" foes="1000000000000100111" cont="0"/>
+        <request index="5"  response="0001000000000011000" foes="0001000000000011000" cont="1"/>
+        <request index="6"  response="1000000000000000010" foes="1000000000000000110" cont="0"/>
+        <request index="7"  response="1000000000000000010" foes="1000000000000000110" cont="0"/>
+        <request index="8"  response="0010111110000000000" foes="0010111110000000100" cont="1"/>
+        <request index="9"  response="0000110000000000000" foes="0000110000000000000" cont="0"/>
+        <request index="10" response="0110000000100000000" foes="0110001000100000100" cont="1"/>
+        <request index="11" response="0100000000100000000" foes="0100001000100000100" cont="0"/>
+        <request index="12" response="0110000110100000000" foes="0110000110100000100" cont="1"/>
+        <request index="13" response="0100000000100000000" foes="0100000001100000100" cont="0"/>
+        <request index="14" response="0100000000100000000" foes="0100000001100000100" cont="0"/>
+        <request index="15" response="0000000000000000000" foes="0000000000000101111" cont="0"/>
+        <request index="16" response="0000000000000000000" foes="0000001010100000100" cont="0"/>
+        <request index="17" response="0000000000000000000" foes="0000111110000000000" cont="0"/>
+        <request index="18" response="0000000000000000000" foes="0000000000011010011" cont="0"/>
+    </junction>
+
+    <junction id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_19_0" type="internal" x="14727.72" y="54872.67" incLanes=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_3_0" intLanes=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_5_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_10_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_17_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c0_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c3_0"/>
+    <junction id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_20_0" type="internal" x="14726.67" y="54870.30" incLanes=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_5_0 251158322#1_1" intLanes=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_3_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_4_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_10_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_17_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c0_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c3_0"/>
+    <junction id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_21_0" type="internal" x="14717.33" y="54848.22" incLanes=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_8_0" intLanes=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_12_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_14_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_14_1 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_14_2 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c1_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c2_0"/>
+    <junction id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_22_0" type="internal" x="14718.49" y="54850.14" incLanes=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_8_1" intLanes=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_12_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_14_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_14_1 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_14_2 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c1_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c2_0"/>
+    <junction id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_23_0" type="internal" x="14706.84" y="54853.47" incLanes=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_11_0" intLanes=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_2_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_13_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c2_0"/>
+    <junction id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_24_0" type="internal" x="14708.34" y="54854.55" incLanes=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_13_0 462537200#1.25_1" intLanes=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_2_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_11_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_12_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c2_0"/>
+    <junction id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_25_0" type="internal" x="14718.66" y="54866.16" incLanes=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_17_0 251158322#1_1 251158322#1_2 251158322#1_3" intLanes=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_2_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_3_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_4_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_5_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_6_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_6_1 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_10_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c3_0"/>
+    <junction id=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_26_0" type="internal" x="14715.83" y="54868.83" incLanes=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_18_0 -161847018#2_1 251158322#1_1 251158322#1_2 251158322#1_3" intLanes=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_0_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_0_1 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_4_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_6_0 :cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_6_1"/>
+    <junction id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_15_0" type="internal" x="14656.59" y="54914.76" incLanes=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_0_0" intLanes=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_4_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_6_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_6_1 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c0_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c3_0"/>
+    <junction id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_16_0" type="internal" x="14655.24" y="54912.55" incLanes=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_0_1" intLanes=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_4_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_6_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_6_1 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c0_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c3_0"/>
+    <junction id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_17_0" type="internal" x="14664.77" y="54912.03" incLanes=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_3_0" intLanes=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_5_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c0_0"/>
+    <junction id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_18_0" type="internal" x="14667.99" y="54905.87" incLanes=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_5_0 228126460#0_1" intLanes=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_3_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_4_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c0_0"/>
+    <junction id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_19_0" type="internal" x="14647.19" y="54889.70" incLanes=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_8_0" intLanes=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_2_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_10_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_11_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_12_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_13_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_13_1 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c1_0"/>
+    <junction id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_20_0" type="internal" x="14645.18" y="54890.91" incLanes=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_10_0" intLanes=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_2_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_8_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_12_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c1_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c2_0"/>
+    <junction id=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_21_0" type="internal" x="14646.54" y="54893.11" incLanes=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_12_0 228126461#1_1" intLanes=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_2_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_8_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_10_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_11_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c1_0 :cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c2_0"/>
+
+    <connection from="-161847018#2" to="548514765" fromLane="1" toLane="1" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_0_0" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="0" dir="r" state="o"/>
+    <connection from="-161847018#2" to="548514765" fromLane="1" toLane="2" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_0_1" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="1" dir="r" state="o"/>
+    <connection from="-161847018#2" to="23055404#1" fromLane="1" toLane="1" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_2_0" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="2" dir="s" state="o"/>
+    <connection from="-23055276#1" to="316778911#1" fromLane="1" toLane="1" via=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_0_0" tl="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" linkIndex="0" dir="r" state="o"/>
+    <connection from="-23055276#1" to="316778911#1" fromLane="1" toLane="2" via=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_0_1" tl="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" linkIndex="1" dir="r" state="o"/>
+    <connection from="-23055276#1" to="23055403#1" fromLane="1" toLane="1" via=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_2_0" tl="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" linkIndex="2" dir="s" state="o"/>
+    <connection from="-23055404#2" to="249375697#1" fromLane="1" toLane="1" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_8_0" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="8" dir="r" state="o"/>
+    <connection from="-23055404#2" to="249375697#1" fromLane="1" toLane="2" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_8_1" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="9" dir="r" state="o"/>
+    <connection from="-23055404#2" to="161847018#1" fromLane="1" toLane="1" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_10_0" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="10" dir="s" state="o"/>
+    <connection from="-270655649#0" to="-23055404#2" fromLane="1" toLane="1" via=":2756692672_1_0" dir="s" state="M"/>
+    <connection from="-729913426" to="23055403#2" fromLane="0" toLane="1" via=":6837583242_2_0" dir="r" state="m"/>
+    <connection from="-729913426" to="729913426" fromLane="0" toLane="0" via=":6837583242_3_0" dir="t" state="m"/>
+    <connection from="161847018#1" to="-161847018#2" fromLane="1" toLane="1" via=":248782310_0_0" dir="t" state="M"/>
+    <connection from="228126460#0" to="23055276#1" fromLane="1" toLane="1" via=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_3_0" tl="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" linkIndex="3" dir="r" state="o"/>
+    <connection from="228126460#0" to="316778911#1" fromLane="1" toLane="1" via=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_4_0" tl="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" linkIndex="4" dir="s" state="o"/>
+    <connection from="228126460#0" to="23055276#1" fromLane="2" toLane="1" via=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_5_0" tl="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" linkIndex="5" dir="r" state="o"/>
+    <connection from="228126460#0" to="316778911#1" fromLane="2" toLane="2" via=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_6_0" tl="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" linkIndex="6" dir="s" state="o"/>
+    <connection from="228126460#0" to="316778911#1" fromLane="3" toLane="3" via=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_6_1" tl="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" linkIndex="7" dir="s" state="o"/>
+    <connection from="228126460#0" to="23055403#1" fromLane="4" toLane="1" via=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_8_0" tl="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" linkIndex="8" dir="l" state="o"/>
+    <connection from="228126460#0" to="462537200#1" fromLane="4" toLane="3" via=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_9_0" tl="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" linkIndex="9" dir="t" state="o"/>
+    <connection from="228126461#1" to="23055403#1" fromLane="1" toLane="1" via=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_10_0" tl="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" linkIndex="10" dir="r" state="o"/>
+    <connection from="228126461#1" to="462537200#1" fromLane="1" toLane="1" via=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_11_0" tl="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" linkIndex="11" dir="s" state="o"/>
+    <connection from="228126461#1" to="23055403#1" fromLane="2" toLane="1" via=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_12_0" tl="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" linkIndex="12" dir="r" state="o"/>
+    <connection from="228126461#1" to="462537200#1" fromLane="2" toLane="2" via=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_13_0" tl="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" linkIndex="13" dir="s" state="o"/>
+    <connection from="228126461#1" to="462537200#1" fromLane="3" toLane="3" via=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_13_1" tl="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" linkIndex="14" dir="s" state="o"/>
+    <connection from="23055276#1" to="-23055276#1" fromLane="1" toLane="1" via=":cluster_1345594333_248782320_0_0" dir="t" state="M"/>
+    <connection from="23055403#1" to="729913426" fromLane="1" toLane="0" via=":6837583242_0_0" dir="r" state="M"/>
+    <connection from="23055403#1" to="23055403#2" fromLane="1" toLane="1" via=":6837583242_1_0" dir="s" state="M"/>
+    <connection from="23055404#1" to="270655649#0" fromLane="1" toLane="1" via=":2756692672_0_0" dir="s" state="M"/>
+    <connection from="251158322#1" to="161847018#1" fromLane="1" toLane="1" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_3_0" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="3" dir="r" state="o"/>
+    <connection from="251158322#1" to="548514765" fromLane="1" toLane="1" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_4_0" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="4" dir="s" state="o"/>
+    <connection from="251158322#1" to="161847018#1" fromLane="2" toLane="1" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_5_0" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="5" dir="r" state="o"/>
+    <connection from="251158322#1" to="548514765" fromLane="2" toLane="2" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_6_0" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="6" dir="s" state="o"/>
+    <connection from="251158322#1" to="548514765" fromLane="3" toLane="3" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_6_1" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="7" dir="s" state="o"/>
+    <connection from="270655649#0" to="-270655649#0" fromLane="1" toLane="1" via=":cluster_248783357_6837763859_0_0" dir="t" state="M"/>
+    <connection from="462537200#1" to="462537200#1.25" fromLane="1" toLane="1" via=":J47_0_0" dir="s" state="M"/>
+    <connection from="462537200#1" to="462537200#1.25" fromLane="2" toLane="2" via=":J47_0_1" dir="s" state="M"/>
+    <connection from="462537200#1" to="462537200#1.25" fromLane="3" toLane="3" via=":J47_0_2" dir="s" state="M"/>
+    <connection from="462537200#1" to="462537200#1.25" fromLane="3" toLane="4" via=":J47_0_3" dir="s" state="M"/>
+    <connection from="462537200#1.25" to="23055404#1" fromLane="1" toLane="1" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_11_0" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="11" dir="r" state="o"/>
+    <connection from="462537200#1.25" to="249375697#1" fromLane="1" toLane="1" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_12_0" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="12" dir="s" state="o"/>
+    <connection from="462537200#1.25" to="23055404#1" fromLane="2" toLane="1" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_13_0" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="13" dir="r" state="o"/>
+    <connection from="462537200#1.25" to="249375697#1" fromLane="2" toLane="2" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_14_0" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="14" dir="s" state="o"/>
+    <connection from="462537200#1.25" to="249375697#1" fromLane="2" toLane="3" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_14_1" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="15" dir="s" state="o"/>
+    <connection from="462537200#1.25" to="249375697#1" fromLane="3" toLane="4" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_14_2" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="16" dir="s" state="o"/>
+    <connection from="462537200#1.25" to="161847018#1" fromLane="4" toLane="1" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_17_0" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="17" dir="l" state="o"/>
+    <connection from="462537200#1.25" to="548514765" fromLane="4" toLane="3" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_18_0" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="18" dir="t" state="o"/>
+    <connection from="548514765" to="228126460#0" fromLane="1" toLane="1" via=":5299018918_0_0" dir="s" state="M"/>
+    <connection from="548514765" to="228126460#0" fromLane="2" toLane="2" via=":5299018918_0_1" dir="s" state="M"/>
+    <connection from="548514765" to="228126460#0" fromLane="3" toLane="3" via=":5299018918_0_2" dir="s" state="M"/>
+    <connection from="548514765" to="228126460#0" fromLane="3" toLane="4" via=":5299018918_0_3" dir="s" state="M"/>
+    <connection from="729913426" to="-729913426" fromLane="0" toLane="0" via=":6837583246_0_0" dir="t" state="M"/>
+
+    <connection from=":248782310_0" to="-161847018#2" fromLane="0" toLane="1" dir="t" state="M"/>
+    <connection from=":2756692672_0" to="270655649#0" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":2756692672_1" to="-23055404#2" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":5299018918_0" to="228126460#0" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":5299018918_0" to="228126460#0" fromLane="1" toLane="2" dir="s" state="M"/>
+    <connection from=":5299018918_0" to="228126460#0" fromLane="2" toLane="3" dir="s" state="M"/>
+    <connection from=":5299018918_0" to="228126460#0" fromLane="3" toLane="4" dir="s" state="M"/>
+    <connection from=":6837583242_0" to="729913426" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":6837583242_1" to="23055403#2" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":6837583242_2" to="23055403#2" fromLane="0" toLane="1" dir="r" state="M"/>
+    <connection from=":6837583242_3" to="729913426" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":6837583246_0" to="-729913426" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":J47_0" to="462537200#1.25" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":J47_0" to="462537200#1.25" fromLane="1" toLane="2" dir="s" state="M"/>
+    <connection from=":J47_0" to="462537200#1.25" fromLane="2" toLane="3" dir="s" state="M"/>
+    <connection from=":J47_0" to="462537200#1.25" fromLane="3" toLane="4" dir="s" state="M"/>
+    <connection from=":cluster_1345594333_248782320_0" to="-23055276#1" fromLane="0" toLane="1" dir="t" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_0" to="548514765" fromLane="0" toLane="1" dir="r" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_0" to="548514765" fromLane="1" toLane="2" dir="r" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_2" to="23055404#1" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_3" to="161847018#1" fromLane="0" toLane="1" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_19_0" dir="r" state="m"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_19" to="161847018#1" fromLane="0" toLane="1" dir="r" state="m"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_4" to="548514765" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_5" to="161847018#1" fromLane="0" toLane="1" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_20_0" dir="r" state="m"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_20" to="161847018#1" fromLane="0" toLane="1" dir="r" state="m"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_6" to="548514765" fromLane="0" toLane="2" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_6" to="548514765" fromLane="1" toLane="3" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_8" to="249375697#1" fromLane="0" toLane="1" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_21_0" dir="r" state="m"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_21" to="249375697#1" fromLane="0" toLane="1" dir="r" state="m"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_8" to="249375697#1" fromLane="1" toLane="2" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_22_0" dir="r" state="m"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_22" to="249375697#1" fromLane="0" toLane="2" dir="r" state="m"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_10" to="161847018#1" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_11" to="23055404#1" fromLane="0" toLane="1" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_23_0" dir="r" state="m"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_23" to="23055404#1" fromLane="0" toLane="1" dir="r" state="m"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_12" to="249375697#1" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_13" to="23055404#1" fromLane="0" toLane="1" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_24_0" dir="r" state="m"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_24" to="23055404#1" fromLane="0" toLane="1" dir="r" state="m"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_14" to="249375697#1" fromLane="0" toLane="2" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_14" to="249375697#1" fromLane="1" toLane="3" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_14" to="249375697#1" fromLane="2" toLane="4" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_17" to="161847018#1" fromLane="0" toLane="1" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_25_0" dir="l" state="m"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_25" to="161847018#1" fromLane="0" toLane="1" dir="l" state="m"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_18" to="548514765" fromLane="0" toLane="3" via=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_26_0" dir="t" state="m"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_26" to="548514765" fromLane="0" toLane="3" dir="t" state="M"/>
+    <connection from=":cluster_248783357_6837763859_0" to="-270655649#0" fromLane="0" toLane="1" dir="t" state="M"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_0" to="316778911#1" fromLane="0" toLane="1" via=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_15_0" dir="r" state="m"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_15" to="316778911#1" fromLane="0" toLane="1" dir="r" state="m"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_0" to="316778911#1" fromLane="1" toLane="2" via=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_16_0" dir="r" state="m"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_16" to="316778911#1" fromLane="0" toLane="2" dir="r" state="m"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_2" to="23055403#1" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_3" to="23055276#1" fromLane="0" toLane="1" via=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_17_0" dir="r" state="m"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_17" to="23055276#1" fromLane="0" toLane="1" dir="r" state="m"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_4" to="316778911#1" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_5" to="23055276#1" fromLane="0" toLane="1" via=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_18_0" dir="r" state="m"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_18" to="23055276#1" fromLane="0" toLane="1" dir="r" state="m"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_6" to="316778911#1" fromLane="0" toLane="2" dir="s" state="M"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_6" to="316778911#1" fromLane="1" toLane="3" dir="s" state="M"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_8" to="23055403#1" fromLane="0" toLane="1" via=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_19_0" dir="l" state="m"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_19" to="23055403#1" fromLane="0" toLane="1" dir="l" state="m"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_9" to="462537200#1" fromLane="0" toLane="3" dir="t" state="M"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_10" to="23055403#1" fromLane="0" toLane="1" via=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_20_0" dir="r" state="m"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_20" to="23055403#1" fromLane="0" toLane="1" dir="r" state="m"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_11" to="462537200#1" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_12" to="23055403#1" fromLane="0" toLane="1" via=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_21_0" dir="r" state="m"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_21" to="23055403#1" fromLane="0" toLane="1" dir="r" state="m"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_13" to="462537200#1" fromLane="0" toLane="2" dir="s" state="M"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_13" to="462537200#1" fromLane="1" toLane="3" dir="s" state="M"/>
+
+    <connection from=":248782310_c0" to=":248782310_w1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":248782310_w0" to=":248782310_c0" fromLane="0" toLane="0" dir="s" state="m"/>
+    <connection from=":248782310_w0" to="-161847018#2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="161847018#1" to=":248782310_w1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":2756692672_w0" to="270655649#0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="23055404#1" to=":2756692672_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":2756692672_w1" to="-23055404#2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="-270655649#0" to=":2756692672_w1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":5299018918_w0" to="228126460#0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="548514765" to=":5299018918_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":6837583242_w0" to="23055403#2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":6837583242_w0" to="729913426" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="-729913426" to=":6837583242_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="23055403#1" to=":6837583242_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":9916479123_w0" to="729932388#11" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":9916479123_w0" to="189776988#0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="729932388#10" to=":9916479123_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":9916479124_w0" to="730196340#4" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="189776988#2" to=":9916479124_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="730196340#3" to=":9916479124_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J47_w0" to="462537200#1.25" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="462537200#1" to=":J47_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_1345594333_248782320_c0" to=":cluster_1345594333_248782320_w1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_1345594333_248782320_w0" to=":cluster_1345594333_248782320_c0" fromLane="0" toLane="0" dir="s" state="m"/>
+    <connection from=":cluster_1345594333_248782320_w0" to="-23055276#1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="23055276#1" to=":cluster_1345594333_248782320_w1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c0" to=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c1" to=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w5" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c2" to=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c3" to=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w4" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w0" to=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c3" fromLane="0" toLane="0" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="22" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w0" to="161847018#1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w0" to="189776988#2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="730196340#4" to=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="251158322#1" to=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w1" to=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c1" fromLane="0" toLane="0" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="20" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w1" to="249375697#1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="189776988#0" to=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w2" to="729932388#10" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="-23055404#2" to=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w3" to=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c2" fromLane="0" toLane="0" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="21" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w3" to="23055404#1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="462537200#1.25" to=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w3" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w4" to="548514765" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="-161847018#2" to=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w4" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_w5" to=":cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262_c0" fromLane="0" toLane="0" tl="cluster_2003822357_2003822358_248782308_248783356_6837803237_6840644262" linkIndex="19" dir="s" state="M"/>
+    <connection from=":cluster_248783357_6837763859_c0" to=":cluster_248783357_6837763859_w1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_248783357_6837763859_w0" to=":cluster_248783357_6837763859_c0" fromLane="0" toLane="0" dir="s" state="m"/>
+    <connection from=":cluster_248783357_6837763859_w0" to="-270655649#0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="270655649#0" to=":cluster_248783357_6837763859_w1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260_c0" to=":cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260_w1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260_c1" to=":cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260_w0" to=":cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260_c0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260_w0" to="251158322#1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260_w0" to="730196340#3" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="729932388#11" to=":cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="249375697#1" to=":cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260_w1" to=":cluster_6837803236_cluster_255196633_cluster_255196642_cluster_1531035453_1531035457_2003751502_2003822359_255196631_6837803239_6837803240_9916500850_9916500851_9916500852_9916500853_9916500854_cluster_248782314_6840644260_c1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261_c0" to=":cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261_c1" to=":cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261_w1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261_w0" to=":cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261_c1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261_w0" to="228126461#1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="730196340#7" to=":cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="316778911#1" to=":cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261_w1" to=":cluster_8039877989_8039877990_9916510857_9916510858_cluster_2003822276_2003822277_2003822278_2003822279_248783352_26936936_4579194762_6840644261_c0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c0" to=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c1" to=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c2" to=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w3" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c3" to=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w4" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w0" to=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c3" fromLane="0" toLane="0" tl="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" linkIndex="18" dir="s" state="M"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w0" to="316778911#1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w0" to="730196340#7" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="-23055276#1" to=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w1" to=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c0" fromLane="0" toLane="0" tl="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" linkIndex="15" dir="s" state="M"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w1" to="23055276#1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="228126460#0" to=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w2" to="462537200#1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w3" to=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c1" fromLane="0" toLane="0" tl="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" linkIndex="16" dir="s" state="M"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w3" to="23055403#1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="228126461#1" to=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w3" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_w4" to=":cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953_c2" fromLane="0" toLane="0" tl="cluster_9916511950_9916511951_cluster_2003822284_2003822285_248782313_248783354_6837803238_6840644263_9916511952_9916511953" linkIndex="17" dir="s" state="M"/>
+</net>
