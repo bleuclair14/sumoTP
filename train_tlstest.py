@@ -22,10 +22,10 @@ NR_STEPS = 100000
 env = TLSEnv(NET, cmd=True)
 
 save_path = join("Training", "Models", f"PPO_{NR_STEPS}_2j")
-# log_path = join("Training", "Logs")
+log_path = join("Training", "Logs")
 
 
-model = PPO('MultiInputPolicy', env, verbose=1)
+model = PPO('MultiInputPolicy', env, verbose=1, tensorboard_log=log_path)
 model.learn(NR_STEPS)
 print("training complete, saving model to path...")
 model.save(save_path)
