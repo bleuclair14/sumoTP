@@ -15,6 +15,8 @@ args:
 num_args = len(sys.argv)
 if num_args>=2:
     NET = sys.argv[1]
+    if num_args>=2:
+        NR_STEPS = sys.argv[2]
 else:
     NET = "small"
 NR_STEPS = 100000
